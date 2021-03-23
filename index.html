@@ -2,23 +2,152 @@
 <html lang="en">
 
 <head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main.css" />
 
-
-   <title>Document</title>
+  <title>Document</title>
 </head>
 
-<body id='main'>
+<body id="main">
+  <section class="section survey">
+    <div class="section-center survey-center">
+      <header class="survey-header">
+        <h2 class="survey-action">Basic Form Validation</h2>
+        <p class="survey-title">
+          Basic validation will display a label with the error after the form
+          control.
+        </p>
+      </header>
 
 
 
+
+      <div class="survey-body">
+
+
+        <div class="">
+          <label class="">Full Name <span class="">*</span></label>
+          <div class="">
+            <input type="text" name="fullname" class="" placeholder="eg.: John Doe" required="" />
+          </div>
+        </div>
+
+
+
+        <div class="">
+          <label class="">Email <span>*</span></label>
+          <div class="">
+            <div></div>
+            <span ">
+                <span >
+                  <i "></i>
+            </span>
+            </span>
+            <input type="email" name="email" placeholder="eg.: email@email.com" required="" />
+          </div>
+        </div>
+
+
+
+        <div class="">
+          <label class="">GitHub</label>
+          <div class="">
+            <input type="url" name="github" placeholder="eg.: https://github.com/johndoe" />
+          </div>
+        </div>
+
+
+
+        <div class="">
+          <label class="">Skills <span class="">*</span></label>
+          <div class="">
+            <textarea name="skills" rows="5" placeholder="Describe your skills" required=""></textarea>
+          </div>
+        </div>
+
+
+
+        <div class="" data-select2-id="6">
+          <label class="">State</label>
+          <div class="" data-select2-id="5">
+            <select id="states" name="states" data-plugin-selecttwo="" class="" title="Please select at least one state"
+              required="" data-select2-id="states" tabindex="-1" aria-hidden="true">
+              <option value="SC" data-select2-id="a">Option 1</option>
+              <option value="VT" data-select2-id="b">Option 2</option>
+              <option value="VA" data-select2-id="c">Option 3</option>
+              <option value="WV" data-select2-id="d">
+                Option 4
+              </option>
+            </select><span class="" dir="ltr" data-select2-id="1" style="width: 338.25px"><span class=""><span class=""
+                  role="combobox" aria-haspopup="true" aria-expanded="false" title="Please select at least one state"
+                  tabindex="0" aria-labelledby="select2-states-container"><span class="" id="select2-states-container"
+                    role="textbox" aria-readonly="true" title="Choose a State">Choose a State</span><span class=""
+                    role="presentation"><b role="presentation"></b></span></span></span><span class=""
+                aria-hidden="true"></span></span>
+          </div>
+        </div>
+
+
+
+        <div class="">
+          <label class="">Porto Admin is <span class="">*</span></label>
+          <div class="">
+            <div class="">
+              <input id="awesome" name="project_is" type="radio" value="awesome" required="" />
+              <label for="awesome">Awesome</label>
+            </div>
+            <div class="">
+              <input id="very-awesome" name="project_is" type="radio" value="very-awesome" />
+              <label for="very-awesome">Very Awesome</label>
+            </div>
+            <div class="">
+              <input id="ultra-awesome" name="porto_is" type="radio" value="ultra-awesome" />
+              <label for="ultra-awesome">Ultran awesome</label>
+            </div>
+            <label class="" for="porto_is"></label>
+          </div>
+        </div>
+
+
+
+        <div class="">
+          <label class="">I will use it for <span class="">*</span></label>
+          <div class="">
+            <div class="">
+              <input id="for-project" value="project" type="checkbox" name="for[]" required="" />
+              <label for="for-project">My Project</label>
+            </div>
+            <div class="">
+              <input id="for-website" value="website" type="checkbox" name="for[]" />
+              <label for="for-website">My Website</label>
+            </div>
+            <div class="">
+              <input id="for-all" value="all" type="checkbox" name="for[]" />
+              <label for="for-all">All things I do</label>
+            </div>
+            <label class="" for="for[]"></label>
+          </div>
+        </div>
+
+
+
+      </div>
+
+      <footer class="card-footer">
+        <div class="">
+          <div class="">
+            <button class="">Submit</button>
+            <button type="reset" class="">Reset</button>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
 </body>
 
 </html>
-
 
 <script></script>
