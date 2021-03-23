@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/main.css" />
 
   <title>Document</title>
@@ -15,8 +17,8 @@
   <section class="section survey">
     <div class="section-center survey-center">
       <header class="survey-header">
-        <h2 class="survey-action">Basic Form Validation</h2>
-        <p class="survey-title">
+        <h2 class="survey-action form-title">Basic Form Validation</h2>
+        <p class="survey-title form-subtitle">
           Basic validation will display a label with the error after the form
           control.
         </p>
@@ -28,17 +30,17 @@
       <div class="survey-body">
 
 
-        <div class="">
-          <label class="">Full Name <span class="">*</span></label>
-          <div class="">
-            <input type="text" name="fullname" class="" placeholder="eg.: John Doe" required="" />
+        <div class="row form-group">
+          <label class="text-label">Full Name <span class="required">*</span></label>
+          <div class="text-input">
+            <input type="text" name="fullname" class="input-control" placeholder="eg.: John Doe" required="" />
           </div>
         </div>
 
 
 
-        <div class="">
-          <label class="">Email <span>*</span></label>
+        <div class="row form-group">
+          <label class="text-label">Email <span>*</span></label>
           <div class="">
             <div></div>
             <span ">
@@ -52,8 +54,8 @@
 
 
 
-        <div class="">
-          <label class="">GitHub</label>
+        <div class="row form-group">
+          <label class="text-label">GitHub</label>
           <div class="">
             <input type="url" name="github" placeholder="eg.: https://github.com/johndoe" />
           </div>
@@ -61,8 +63,8 @@
 
 
 
-        <div class="">
-          <label class="">Skills <span class="">*</span></label>
+        <div class="row form-group">
+          <label class="text-label">Skills <span class="">*</span></label>
           <div class="">
             <textarea name="skills" rows="5" placeholder="Describe your skills" required=""></textarea>
           </div>
@@ -70,8 +72,8 @@
 
 
 
-        <div class="" data-select2-id="6">
-          <label class="">State</label>
+        <div class="row form-group" data-select2-id="6">
+          <label class="text-label">State</label>
           <div class="" data-select2-id="5">
             <select id="states" name="states" data-plugin-selecttwo="" class="" title="Please select at least one state"
               required="" data-select2-id="states" tabindex="-1" aria-hidden="true">
@@ -92,8 +94,8 @@
 
 
 
-        <div class="">
-          <label class="">Porto Admin is <span class="">*</span></label>
+        <div class="row form-group">
+          <label class="text-label">Admin is <span class="">*</span></label>
           <div class="">
             <div class="">
               <input id="awesome" name="project_is" type="radio" value="awesome" required="" />
@@ -113,8 +115,8 @@
 
 
 
-        <div class="">
-          <label class="">I will use it for <span class="">*</span></label>
+        <div class="row form-group">
+          <label class="text-label">I will use it for <span class="">*</span></label>
           <div class="">
             <div class="">
               <input id="for-project" value="project" type="checkbox" name="for[]" required="" />
