@@ -23,7 +23,7 @@ html {
 }
 
 body {
-  color: #777;
+  color: #495057;
   background-color: #ecedf0;
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 2.2rem;
@@ -82,7 +82,6 @@ body {
 }
 
 .form-title {
-  color: #33353f;
   font-size: 2rem;
   font-weight: 400;
   line-height: 2rem;
@@ -122,7 +121,6 @@ body {
 .text-input {
   padding-right: 1.5rem;
   padding-left: 1.5rem;
-  margin: auto 0;
   flex: 0 0 75%;
   width: 100%;
   max-width: 75%;
@@ -130,14 +128,14 @@ body {
 
 .input-control {
   min-height: 3.7rem;
+  height: calc(1.5em + 0.75rem + 2px);
+  line-height: 3rem;
+  padding: 0.375rem 1.2rem;
   display: block;
   width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 1.2rem;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   color: #495057;
-  line-height: 3rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
@@ -182,15 +180,57 @@ input {
 /* The container must be positioned relative: */
 .custom-select {
   position: relative;
-  font-family: 'Open Sans', arial;
+  font-size: 1.4rem;
+}
+
+/* style the items (options), including the selected item: */
+
+.select-selected,
+.select-items div {
+  display: flex;
+
+  padding: 0.375rem 1.2rem;
+  min-height: 3.7rem;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+.select-selected {
+  background-color: #fdfdfd;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: #fdfdfd;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+
+  height: 20rem;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .custom-select select {
   display: none; /*hide original SELECT element: */
 }
 
-.select-selected {
-  background-color: DodgerBlue;
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Style the arrow inside the select element: */
@@ -202,41 +242,11 @@ input {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #fff transparent transparent transparent;
+  border-color: #495057 transparent transparent transparent;
 }
 
 /* Point the arrow upwards when the select box is open (active): */
 .select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent #495057 transparent;
   top: 7px;
-}
-
-/* style the items (options), including the selected item: */
-.select-items div,
-.select-selected {
-  color: #ffffff;
-  padding: 8px 16px;
-  border: 1px solid transparent;
-  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
-  cursor: pointer;
-}
-
-/* Style items (options): */
-.select-items {
-  position: absolute;
-  background-color: DodgerBlue;
-  top: 100%;
-  left: 0;
-  right: 0;
-  z-index: 99;
-}
-
-/* Hide the items when the select box is closed: */
-.select-hide {
-  display: none;
-}
-
-.select-items div:hover,
-.same-as-selected {
-  background-color: rgba(0, 0, 0, 0.1);
 }
