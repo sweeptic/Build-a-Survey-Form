@@ -11,25 +11,19 @@
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-  <title>Document</title>
+  <title>Survey form</title>
 </head>
 
 <body id="main">
-
   <form action="">
-
     <section class="section survey">
       <div class="section-center survey-center">
         <header class="survey-header">
           <h2 class="survey-action form-title">Basic Form Validation</h2>
           <p class="survey-title form-subtitle">
-            Basic validation will display a label with the error after the form
-            control.
+            Freecodecamp project. Basic validation will display a label with the error.
           </p>
         </header>
-
-
-
         <div class="survey-body">
           <div class="row form-group">
             <label class="text-label">Full Name <span class="required">*</span></label>
@@ -38,9 +32,6 @@
                 required="required" />
             </div>
           </div>
-
-
-
           <div class="row form-group">
             <label class="text-label">Email <span class="required">*</span></label>
             <div class="text-input">
@@ -53,9 +44,6 @@
               <input class="input-control" type="email" name="email" placeholder="eg.: email@email.com" required="" />
             </div>
           </div>
-
-
-
           <div class="row form-group">
             <label class="text-label">Age </label>
             <div class="text-input">
@@ -68,18 +56,12 @@
               <input class="input-control" type="number" name="number" placeholder="Your age here" min="1" max="100" />
             </div>
           </div>
-
-
-
           <div class="row form-group">
             <label class="text-label">GitHub</label>
             <div class="text-input">
               <input class="input-control" type="url" name="github" placeholder="eg.: https://github.com/johndoe" />
             </div>
           </div>
-
-
-
           <div class="row form-group">
             <label class="text-label">Skills <span class="required">*</span></label>
             <div class="text-input">
@@ -87,9 +69,6 @@
                 required=""></textarea>
             </div>
           </div>
-
-
-
           <div class="row form-group">
             <label for="standard-select" class="text-label">State</label>
             <div class="text-input">
@@ -113,14 +92,8 @@
               </div>
             </div>
           </div>
-
-
-
-
-
           <div class="row form-group pt-2">
             <label class="text-label">This page is <span class="required">*</span></label>
-
             <div class="text-input">
               <div class="radio-custom">
                 <input required id="radio-1" name="is" type="radio" value="awesome">
@@ -137,7 +110,6 @@
               <label class="error" for=""></label>
             </div>
           </div>
-
           <div class="row form-group pt-2" id="sectionForm">
             <label class="text-label">I will use it for <span class="required">*</span></label>
             <div class="text-input">
@@ -156,9 +128,7 @@
               <label class="error" for=""></label>
             </div>
           </div>
-
         </div>
-
         <footer class="form-footer">
           <div class="row">
             <div class="text-input wider-btn">
@@ -170,9 +140,7 @@
       </div>
     </section>
   </form>
-
-
-  <!-- some IIFE -->
+  <!-- IIFE -->
   <script src="./script/checkbox-validity.js"></script>
 
 </body>

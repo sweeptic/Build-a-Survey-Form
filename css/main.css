@@ -1,9 +1,5 @@
 :root {
- 
- 
   --select-arrow: var(--default-font-color);
-  
-  
   --primary-color: #0088cc;
   --primary-color-lighten: #024b72;
   --primary-box-shadow: #0088cc42;
@@ -20,17 +16,10 @@
   --black: #000000;
   --button-border-color: #ccc;
   --button-hover-color: rgb(196, 196, 196);
-
-  
   --input-border-color: #ced4da;
   --radio-checkbox-border-color: #bbb;
-
-
-  
   --section-ruler: 2px #efe9e9 solid;
   --page-width: 90vw;
-
-  
 }
 
 * {
@@ -47,10 +36,6 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-
-  /* @media only screen and (max-width: $bp-large) {
-     font-size: 50%;
-   } */
 }
 
 input,
@@ -72,6 +57,11 @@ body {
   margin: 0;
   font-size: 1.3rem;
 }
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
 
 .section {
   padding: 5rem 0;
@@ -193,11 +183,6 @@ input:focus {
   box-shadow: 0 0 10px var(--primary-box-shadow);
 }
 
-/* input[type='textarea'] {
-  font-family: 'Open Sans', arial;
-  font-size: 1.4rem;
-} */
-
 ::-webkit-input-placeholder {
   color: var(--font-placeholder-color);
   font-size: 1.4rem;
@@ -216,7 +201,6 @@ input:focus {
 }
 
 /*CUSTOM SELECT */
-
 select {
   appearance: none;
   outline: none;
@@ -275,12 +259,8 @@ select:focus + .focus {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.pt-2 {
-  padding-top: 2rem;
-}
 
-/* RADIO */
-
+/* RADIO BUTTON*/
 .radio-custom {
   position: relative;
   padding: 0 0 0 2.5rem;
@@ -335,7 +315,6 @@ input[type='checkbox'] {
 }
 
 /* CHECKBOX */
-
 .checkbox-custom {
   position: relative;
   padding: 0 0 0 2.5rem;
@@ -383,6 +362,7 @@ input[type='checkbox'] {
   color: var(--black);
 }
 
+/* FOOTER */
 .form-footer {
   padding: 1.2rem 2rem;
   border-radius: 0 0 calc(0.25rem - 1px) calc(0.25rem - 1px);
@@ -391,6 +371,7 @@ input[type='checkbox'] {
   border-top: var(--section-ruler);
 }
 
+/* BUTTONS */
 .btn {
   display: inline-block;
   font-size: 1.44rem;
@@ -429,6 +410,7 @@ input[type='checkbox'] {
   background-color: var(--button-hover-color);
 }
 
+/* MEDIA QUERIES */
 @media screen and (max-width: 574px) {
   .row {
     display: grid;
