@@ -15,146 +15,165 @@
 </head>
 
 <body id="main">
-  <section class="section survey">
-    <div class="section-center survey-center">
-      <header class="survey-header">
-        <h2 class="survey-action form-title">Basic Form Validation</h2>
-        <p class="survey-title form-subtitle">
-          Basic validation will display a label with the error after the form
-          control.
-        </p>
-      </header>
+
+  <form action="">
+
+    <section class="section survey">
+      <div class="section-center survey-center">
+        <header class="survey-header">
+          <h2 class="survey-action form-title">Basic Form Validation</h2>
+          <p class="survey-title form-subtitle">
+            Basic validation will display a label with the error after the form
+            control.
+          </p>
+        </header>
 
 
 
-
-      <div class="survey-body">
-
-
-        <div class="row form-group">
-          <label class="text-label">Full Name <span class="required">*</span></label>
-          <div class="text-input">
-            <input type="text" name="fullname" class="input-control" placeholder="eg.: John Doe" required="" />
+        <div class="survey-body">
+          <div class="row form-group">
+            <label class="text-label">Full Name <span class="required">*</span></label>
+            <div class="text-input">
+              <input type="text" name="fullname" class="input-control" placeholder="eg.: John Doe"
+                required="required" />
+            </div>
           </div>
-        </div>
 
 
 
-        <div class="row form-group">
-          <label class="text-label">Email <span class="required">*</span></label>
-          <div class="text-input">
-            <div></div>
-            <span ">
+          <div class="row form-group">
+            <label class="text-label">Email <span class="required">*</span></label>
+            <div class="text-input">
+              <div></div>
+              <span ">
                 <span >
                   <i "></i>
-            </span>
-            </span>
-            <input class="input-control" type="email" name="email" placeholder="eg.: email@email.com" required="" />
-          </div>
-        </div>
-
-
-
-        <div class="row form-group">
-          <label class="text-label">GitHub</label>
-          <div class="text-input">
-            <input class="input-control" type="url" name="github" placeholder="eg.: https://github.com/johndoe" />
-          </div>
-        </div>
-
-
-
-        <div class="row form-group">
-          <label class="text-label">Skills <span class="required">*</span></label>
-          <div class="text-input">
-            <textarea class="input-control" name="skills" rows="5" placeholder="Describe your skills"
-              required=""></textarea>
-          </div>
-        </div>
-
-
-
-        <div class="row form-group">
-          <label class="text-label">State</label>
-          <div class="text-input">
-            <div class='custom-select '>
-              <select>
-                <option value="0">Select car:</option>
-                <option value="1">Audi</option>
-                <option value="2">BMW</option>
-                <option value="3">Citroen</option>
-                <option value="4">Ford</option>
-                <option value="5">Honda</option>
-                <option value="6">Jaguar</option>
-                <option value="7">Land Rover</option>
-                <option value="8">Mercedes</option>
-                <option value="9">Mini</option>
-                <option value="10">Nissan</option>
-                <option value="11">Toyota</option>
-                <option value="12">Volvo</option>
-              </select>
+              </span>
+              </span>
+              <input class="input-control" type="email" name="email" placeholder="eg.: email@email.com" required="" />
             </div>
           </div>
-        </div>
 
 
-        <div class="row form-group pt-2">
-          <label class="text-label">This page is <span class="required">*</span></label>
 
-          <div class="text-input">
-            <div class="radio-custom">
-              <input id="radio-1" name="is" type="radio" value="awesome" required="">
-              <label for="radio-1">Awesome</label>
+          <div class="row form-group">
+            <label class="text-label">Age </label>
+            <div class="text-input">
+              <div></div>
+              <span ">
+                <span >
+                  <i "></i>
+              </span>
+              </span>
+              <input class="input-control" type="number" name="number" placeholder="Your age here" min="1" max="100" />
             </div>
-            <div class="radio-custom">
-              <input id="radio-2" name="is" type="radio" value="very-awesome">
-              <label for="radio-2">Very Awesome</label>
-            </div>
-            <div class="radio-custom">
-              <input id="radio-3" name="is" type="radio" value="ultra-awesome">
-              <label for="radio-3">Ultra awesome</label>
-            </div>
-            <label class="error" for=""></label>
           </div>
-        </div>
 
-        <div class="row form-group pt-2">
-          <label class="text-label">I will use it for <span class="required">*</span></label>
-          <div class="text-input">
-            <div class="checkbox-custom">
-              <input id="for-project" value="project" type="checkbox" name="checkbox" required="">
-              <label for="for-project">My Project</label>
+
+
+          <div class="row form-group">
+            <label class="text-label">GitHub</label>
+            <div class="text-input">
+              <input class="input-control" type="url" name="github" placeholder="eg.: https://github.com/johndoe" />
             </div>
-            <div class="checkbox-custom">
-              <input id="for-website" value="website" type="checkbox" name="checkbox">
-              <label for="for-website">My Website</label>
-            </div>
-            <div class="checkbox-custom">
-              <input id="for-all" value="all" type="checkbox" name="checkbox">
-              <label for="for-all">All things I do</label>
-            </div>
-            <label class="error" for=""></label>
           </div>
+
+
+
+          <div class="row form-group">
+            <label class="text-label">Skills <span class="required">*</span></label>
+            <div class="text-input">
+              <textarea class="input-control" name="skills" rows="5" placeholder="Describe your skills"
+                required=""></textarea>
+            </div>
+          </div>
+
+
+
+          <div class="row form-group">
+            <label for="standard-select" class="text-label">State</label>
+            <div class="text-input">
+              <div class='select'>
+                <select id="standard-select">
+                  <option value="0">Select car:</option>
+                  <option value="1">Audi</option>
+                  <option value="2">BMW</option>
+                  <option value="3">Citroen</option>
+                  <option value="4">Ford</option>
+                  <option value="5">Honda</option>
+                  <option value="6">Jaguar</option>
+                  <option value="7">Land Rover</option>
+                  <option value="8">Mercedes</option>
+                  <option value="9">Mini</option>
+                  <option value="10">Nissan</option>
+                  <option value="11">Toyota</option>
+                  <option value="12">Volvo</option>
+                </select>
+                <span class="focus"></span>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+          <div class="row form-group pt-2">
+            <label class="text-label">This page is <span class="required">*</span></label>
+
+            <div class="text-input">
+              <div class="radio-custom">
+                <input required id="radio-1" name="is" type="radio" value="awesome">
+                <label for="radio-1">Awesome</label>
+              </div>
+              <div class="radio-custom">
+                <input id="radio-2" name="is" type="radio" value="very-awesome">
+                <label for="radio-2">Very Awesome</label>
+              </div>
+              <div class="radio-custom">
+                <input id="radio-3" name="is" type="radio" value="ultra-awesome">
+                <label for="radio-3">Ultra awesome</label>
+              </div>
+              <label class="error" for=""></label>
+            </div>
+          </div>
+
+          <div class="row form-group pt-2" id="sectionForm">
+            <label class="text-label">I will use it for <span class="required">*</span></label>
+            <div class="text-input">
+              <div class="checkbox-custom">
+                <input id="for-project" value="project" type="checkbox" name="checkbox">
+                <label for="for-project">My Project</label>
+              </div>
+              <div class="checkbox-custom">
+                <input id="for-website" value="website" type="checkbox" name="checkbox">
+                <label for="for-website">My Website</label>
+              </div>
+              <div class="checkbox-custom">
+                <input id="for-all" value="all" type="checkbox" name="checkbox">
+                <label for="for-all">All things I do</label>
+              </div>
+              <label class="error" for=""></label>
+            </div>
+          </div>
+
         </div>
 
-
-
-
+        <footer class="form-footer">
+          <div class="row">
+            <div class="text-input wider-btn">
+              <button type="submit" class="btn btn-primary">Submit</button>
+              <button id="resetFormBtn" type="reset" class="btn btn-default">Reset</button>
+            </div>
+          </div>
+        </footer>
       </div>
-
-      <footer class="form-footer">
-        <div class="row">
-          <div class="text-input wider-btn">
-            <button class="btn btn-primary">Submit</button>
-            <button type="reset" class="btn btn-default">Reset</button>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </section>
+    </section>
+  </form>
 
 
-  <script type="text/javascript" src="./script/dropdown.js"></script>
+  <!-- some IIFE -->
+  <script src="./script/checkbox-validity.js"></script>
 
 </body>
 

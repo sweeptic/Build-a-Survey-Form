@@ -16,6 +16,7 @@
     customSelect[i].appendChild(a);
     /* For each element, create a new DIV that will contain the option list: */
     b.setAttribute('class', 'select-items select-hide');
+
     for (let j = 1; j < selElement.length; j++) {
       /* For each option in the original select element,
       create a new DIV that will act as an option item: */
@@ -42,6 +43,8 @@
         }
         h.click();
       });
+
+      console.log(b);
 
       b.appendChild(c);
     }
@@ -82,7 +85,20 @@
     }
   }
 
+  function reset() {
+    let customSelect = document.getElementsByClassName('custom-select');
+
+    for (let i = 0; i < customSelect.length; i++) {
+      let selElement = customSelect[i].getElementsByTagName('select')[0];
+      console.log(selElement);
+    }
+  }
+
   /* If the user clicks anywhere outside the select box,
   then close all select boxes: */
   document.addEventListener('click', closeAllSelect);
+
+  document
+    .getElementById('resetFormBtn')
+    .addEventListener('click', reset, false);
 })();
