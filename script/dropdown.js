@@ -1,5 +1,6 @@
 // CUSTOM SELECT
 
+// IIFE
 (function () {
   /* Look for any elements with the class "custom-select": */
   let customSelect = document.getElementsByClassName('custom-select');
