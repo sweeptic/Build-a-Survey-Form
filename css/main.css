@@ -50,7 +50,7 @@ textarea {
 }
 
 body {
-  color: var(--default-font-color); 
+  color: var(--default-font-color);
   background-color: var(--page-background-color);
   font-family: 'Open Sans', Arial, sans-serif;
   line-height: 2.2rem;
@@ -61,7 +61,6 @@ body {
 .pt-2 {
   padding-top: 2rem;
 }
-
 
 .section {
   padding: 5rem 0;
@@ -259,7 +258,6 @@ select:focus + .focus {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-
 /* RADIO BUTTON*/
 .radio-custom {
   position: relative;
@@ -390,7 +388,7 @@ input[type='checkbox'] {
 
 .btn-primary {
   background-color: var(--primary-color);
-  border-color: var(--primary-color) ;
+  border-color: var(--primary-color);
   color: var(--white);
 }
 
